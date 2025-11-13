@@ -14,4 +14,13 @@ public class UserService {
     public User addUser(User user) {
         return userRepository.save(user);
     }
+
+    public User getUserById(Integer id){
+        User user = userRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("User not found !"));
+        return user;
+    }
+
+    public void deleteUser(Integer id) {
+        userRepository.deleteById(id);
+    }
 }
