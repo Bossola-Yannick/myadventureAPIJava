@@ -1,9 +1,9 @@
 package ByOrkblan.MyAdventure.repository;
 
-import ByOrkblan.MyAdventure.model.GrailQuest;
+import ByOrkblan.MyAdventure.model.Adventure;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GrailsQuestRepository extends JpaRepository<GrailQuest, Integer> {
+interface AdventureRepository extends JpaRepository<Adventure, Long> {
 }

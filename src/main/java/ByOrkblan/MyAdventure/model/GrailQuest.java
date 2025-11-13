@@ -1,15 +1,15 @@
 package ByOrkblan.MyAdventure.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.Data;
+
 
 @Data
 @Entity
-public class GrailQuest {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
+public class GrailQuest extends Adventure{
+private int lifeStart;
+private int currentLife;
+private int experience;
+private int permanentLife;
+
 }

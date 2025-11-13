@@ -1,15 +1,21 @@
 package ByOrkblan.MyAdventure.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.Data;
+
 
 @Data
 @Entity
-public class FightingFantasy {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer Id;
+public class FightingFantasy extends Adventure{
+    private int startAbility;
+    private int currentAbility;
+    private int startEndurance;
+    private int currentEndurance;
+    private int startLuck;
+    private int currentLuck;
+    private int gold;
+    private int jewels;
+    private String potionName;
+    private int potionDose;
+    private int food;
 }
